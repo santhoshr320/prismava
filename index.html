@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Streaming Sticks Comparison 2025 | Prismava</title>
+    <meta name="description" content="Comprehensive comparison of top streaming sticks including Amazon Fire TV, Google Chromecast, Roku, and more. Find the perfect streaming device for your needs.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .device-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .device-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .device-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+
+        .device-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .device-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .device-price {
+            font-size: 1.4rem;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .spec-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .spec-label {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 0.9rem;
+        }
+
+        .spec-value {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .features-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .pros, .cons {
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .pros {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .cons {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+
+        .pros h4, .cons h4 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .pros ul, .cons ul {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .pros li:before {
+            content: '+ ';
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .cons li:before {
+            content: '- ';
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .rating {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .stars {
+            font-size: 1.5rem;
+            color: #ffc107;
+            margin-bottom: 5px;
+        }
+
+        .rating-text {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+
+        .comparison-table h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .guide-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .guide-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .guide-section p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .disclaimer h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer p {
+            color: #856404;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+
+        .footer-section p, .footer-section li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li:before {
+            content: '→ ';
+            color: #3498db;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ultimate Streaming Sticks Comparison 2025</h1>
+            <p>Find the perfect streaming device for your entertainment needs</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Top Streaming Sticks in India 2025</h2>
+            <p>The streaming device market in India has evolved significantly, with multiple options offering excellent 4K streaming capabilities. Below is our comprehensive analysis of the best streaming sticks available in the Indian market, covering everything from budget-friendly options to premium devices.</p>
+        </div>
+
+        <div class="comparison-grid">
+            <!-- Amazon Fire TV Stick 4K Max -->
+            <div class="device-card">
+                <div class="device-header">
+                    <h3 class="device-name">Amazon Fire TV Stick 4K Max</h3>
+                    <div class="device-price">₹5,999</div>
+                </div>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-label">Resolution</div>
+                        <div class="spec-value">4K Ultra HD</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">HDR Support</div>
+                        <div class="spec-value">HDR10+, Dolby Vision</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Processor</div>
+                        <div class="spec-value">Quad-core 1.8GHz</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Storage</div>
+                        <div class="spec-value">8GB</div>
+                    </div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Wi-Fi 6 support for faster streaming</li>
+                    <li>Alexa Voice Remote with TV controls</li>
+                    <li>Dolby Atmos audio support</li>
+                    <li>Gaming compatible</li>
+                    <li>Access to 1,000+ apps</li>
+                </ul>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Excellent performance</li>
+                            <li>Wide app selection</li>
+                            <li>Great value for money</li>
+                            <li>Regular updates</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Amazon ecosystem focused</li>
+                            <li>Interface can be cluttered</li>
+                            <li>Remote lacks backlight</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rating">
+                    <div class="stars">★★★★☆</div>
+                    <div class="rating-text">4.5/5 Rating</div>
+                </div>
+            </div>
+
+            <!-- Google Chromecast with Google TV -->
+            <div class="device-card">
+                <div class="device-header">
+                    <h3 class="device-name">Google Chromecast with Google TV</h3>
+                    <div class="device-price">₹6,399</div>
+                </div>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-label">Resolution</div>
+                        <div class="spec-value">4K Ultra HD</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">HDR Support</div>
+                        <div class="spec-value">HDR10+, Dolby Vision</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Processor</div>
+                        <div class="spec-value">Quad-core ARM Cortex-A55</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Storage</div>
+                        <div class="spec-value">8GB</div>
+                    </div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Google TV interface with recommendations</li>
+                    <li>Voice remote with Google Assistant</li>
+                    <li>Cast from phone/tablet/laptop</li>
+                    <li>Personalized content suggestions</li>
+                    <li>Works with Google ecosystem</li>
+                </ul>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Clean, intuitive interface</li>
+                            <li>Excellent casting features</li>
+                            <li>Great content discovery</li>
+                            <li>Regular OS updates</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Limited storage space</li>
+                            <li>Can be slow with many apps</li>
+                            <li>Remote lacks power button</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rating">
+                    <div class="stars">★★★★☆</div>
+                    <div class="rating-text">4.3/5 Rating</div>
+                </div>
+            </div>
+
+            <!-- Roku Streaming Stick 4K+ -->
+            <div class="device-card">
+                <div class="device-header">
+                    <h3 class="device-name">Roku Streaming Stick 4K+</h3>
+                    <div class="device-price">₹4,999</div>
+                </div>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-label">Resolution</div>
+                        <div class="spec-value">4K Ultra HD</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">HDR Support</div>
+                        <div class="spec-value">HDR10+, Dolby Vision</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Processor</div>
+                        <div class="spec-value">Quad-core ARM</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Storage</div>
+                        <div class="spec-value">256MB</div>
+                    </div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Dolby Atmos audio support</li>
+                    <li>Voice remote with TV controls</li>
+                    <li>Private listening on mobile</li>
+                    <li>Lost remote finder</li>
+                    <li>500,000+ movies and TV episodes</li>
+                </ul>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Neutral platform</li>
+                            <li>Huge content library</li>
+                            <li>User-friendly interface</li>
+                            <li>Great search functionality</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Limited in India</li>
+                            <li>No official support</li>
+                            <li>Fewer local content options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rating">
+                    <div class="stars">★★★☆☆</div>
+                    <div class="rating-text">3.8/5 Rating</div>
+                </div>
+            </div>
+
+            <!-- Apple TV 4K -->
+            <div class="device-card">
+                <div class="device-header">
+                    <h3 class="device-name">Apple TV 4K</h3>
+                    <div class="device-price">₹18,900</div>
+                </div>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-label">Resolution</div>
+                        <div class="spec-value">4K Ultra HD</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">HDR Support</div>
+                        <div class="spec-value">HDR10+, Dolby Vision</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Processor</div>
+                        <div class="spec-value">A15 Bionic chip</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Storage</div>
+                        <div class="spec-value">64GB/128GB</div>
+                    </div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Siri Remote with touch-enabled clickpad</li>
+                    <li>AirPlay and HomeKit support</li>
+                    <li>Gaming with Apple Arcade</li>
+                    <li>Dolby Atmos spatial audio</li>
+                    <li>Seamless Apple ecosystem integration</li>
+                </ul>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Premium build quality</li>
+                            <li>Powerful performance</li>
+                            <li>Excellent video quality</li>
+                            <li>Great for Apple users</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Very expensive</li>
+                            <li>Limited app selection</li>
+                            <li>Best with Apple ecosystem</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rating">
+                    <div class="stars">★★★★☆</div>
+                    <div class="rating-text">4.2/5 Rating</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-table">
+            <h2>Side-by-Side Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Fire TV Stick 4K Max</th>
+                        <th>Chromecast with Google TV</th>
+                        <th>Roku Streaming Stick 4K+</th>
+                        <th>Apple TV 4K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Price (₹)</strong></td>
+                        <td>5,999</td>
+                        <td>6,399</td>
+                        <td>4,999</td>
+                        <td>18,900</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Resolution</strong></td>
+                        <td>4K Ultra HD</td>
+                        <td>4K Ultra HD</td>
+                        <td>4K Ultra HD</td>
+                        <td>4K Ultra HD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HDR Support</strong></td>
+                        <td>HDR10+, Dolby Vision</td>
+                        <td>HDR10+, Dolby Vision</td>
+                        <td>HDR10+, Dolby Vision</td>
+                        <td>HDR10+, Dolby Vision</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Audio</strong></td>
+                        <td>Dolby Atmos</td>
+                        <td>Dolby Atmos</td>
+                        <td>Dolby Atmos</td>
+                        <td>Dolby Atmos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wi-Fi</strong></td>
+                        <td>Wi-Fi 6</td>
+                        <td>Wi-Fi 5</td>
+                        <td>Wi-Fi 5</td>
+                        <td>Wi-Fi 6</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gaming</strong></td>
+                        <td>Yes</td>
+                        <td>Limited</td>
+                        <td>Basic</td>
+                        <td>Apple Arcade</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Voice Control</strong></td>
+                        <td>Alexa</td>
+                        <td>Google Assistant</td>
+                        <td>Roku Voice</td>
+                        <td>Siri</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best For</strong></td>
+                        <td>Amazon Prime users</td>
+                        <td>Google ecosystem users</td>
+                        <td>Content variety seekers</td>
+                        <td>Apple ecosystem users</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="guide-section">
+            <h2>Streaming Stick Buying Guide for Indian Users</h2>
+            <p>Selecting the perfect streaming device depends on several factors. Consider your existing ecosystem - if you're heavily invested in Amazon Prime, Google services, or Apple products, choosing a corresponding device will provide the best integration.</p>
+            
+            <p>Budget plays a crucial role. The Fire TV Stick 4K Max offers excellent value for money, while the Apple TV 4K is a premium option. Performance requirements matter too - if you want the fastest interface and best gaming capabilities, invest in higher-end options.</p>
+            
+            <p>Content preferences are equally important. Each platform has exclusive content and better integration with certain services. Research which streaming services you use most frequently and ensure they're well-supported on your chosen device.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Internet Speed Requirements for 4K Streaming</h2>
+            <p>For optimal 4K streaming experience in India, ensure you have a stable broadband connection with minimum 25 Mbps speed. Most Indian ISPs like Jio Fiber, Airtel Xstream, and ACT Broadband offer plans suitable for 4K streaming. Consider upgrading to higher speed plans if you have multiple devices streaming simultaneously.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Popular Streaming Services in India</h2>
+            <p>All featured devices support major Indian streaming platforms including Netflix, Amazon Prime Video, Disney+ Hotstar, SonyLIV, Zee5, Alt Balaji, MX Player, and Voot. Regional content availability varies, with some platforms offering better support for local languages and Bollywood content.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Step-by-Step Installation and Setup Guide</h2>
+            <p>Setting up your streaming stick is straightforward. First, connect the device to your TV's HDMI port and plug in the power adapter. Most modern TVs can power these devices through USB, eliminating the need for a separate power outlet.</p>
+            
+            <p>Follow the on-screen setup wizard to connect to your Wi-Fi network. You'll need to sign in to your respective accounts (Amazon, Google, Roku, or Apple) and may need to activate the device through a web browser on your phone or computer.</p>
+            
+            <p>Download your preferred streaming apps from the device's app store. Most popular services like Netflix, Disney+, Prime Video, and YouTube are available across all platforms. Some devices offer bulk app installation during setup.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Troubleshooting Common Issues</h2>
+            <p>If you experience buffering or poor video quality, first check your internet speed and ensure other devices aren't consuming bandwidth. Restart your router and streaming device if connection issues persist. For audio problems, verify your TV's audio settings and ensure the streaming stick's audio format matches your TV's capabilities.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Performance Optimization Tips</h2>
+            <p>Ensure your internet connection meets the minimum requirements for 4K streaming (25 Mbps recommended). Position your router close to your streaming device or use a Wi-Fi extender if needed. Regularly update your device's firmware and apps for the best performance and security.</p>
+            
+            <p>Manage your device's storage by uninstalling unused apps and clearing cache regularly. Use ethernet adapters for the most stable connection if Wi-Fi is unreliable. Consider upgrading your HDMI cable to a high-speed version for best 4K HDR performance.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Cost Analysis and Value Comparison</h2>
+            <p>When comparing streaming sticks, consider the total cost of ownership including device price, subscription services, and potential accessories. The Fire TV Stick 4K Max offers the best value proposition for Indian consumers, while Apple TV 4K provides premium features at a higher price point.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Gaming and Additional Features</h2>
+            <p>Modern streaming sticks offer more than just video streaming. Gaming capabilities vary significantly between devices, with Apple TV 4K leading in gaming performance through Apple Arcade. Fire TV Stick 4K Max supports casual gaming and has a growing library of compatible games.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Security and Privacy Considerations</h2>
+            <p>When choosing a streaming device, consider the privacy implications. Each platform collects different types of data for personalization and service improvement. Review privacy settings regularly and disable unnecessary data collection features. Keep your device updated with the latest security patches.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Warranty and Customer Support in India</h2>
+            <p>Amazon Fire TV devices come with official warranty and customer support in India through Amazon's service centers. Google Chromecast also offers official support, while Roku has limited presence. Apple TV 4K is supported through Apple's Indian service network with comprehensive warranty coverage.</p>
+        </div>
+
+        <div class="disclaimer">
+            <h3>Important Disclaimers and Legal Information</h3>
+            <p><strong>Pricing Information:</strong> All prices mentioned are approximate and may vary based on current market conditions, promotions, and retailer policies. Prices are subject to change without notice.</p>
+            
+            <p><strong>Affiliate Disclosure:</strong> This website may contain affiliate links. We may earn a commission when you purchase through these links at no additional cost to you.</p>
+            
+            <p><strong>Product Availability:</strong> Product availability may vary by region. Some features mentioned may not be available in all markets, particularly in India.</p>
+            
+            <p><strong>Technical Specifications:</strong> Specifications are based on manufacturer information and may be subject to change. Always verify specifications with the manufacturer before purchase.</p>
+            
+            <p><strong>Performance Claims:</strong> Performance may vary based on internet speed, network conditions, and TV compatibility. Actual results may differ from stated specifications.</p>
+            
+            <p><strong>Content Availability:</strong> Streaming content availability varies by region and is subject to licensing agreements. Some content may not be available in India.</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>Data Collection and Privacy Policy</h2>
+            <p>This website uses cookies to enhance user experience and provide personalized content. We collect anonymous usage data to improve our services. No personal information is stored or shared without explicit consent.</p>
+            
+            <p>For information about how streaming device manufacturers collect and use data, please refer to their respective privacy policies. Most devices collect usage data to improve services and provide recommendations.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Prismava</h3>
+                <p>Prismava is your trusted source for comprehensive technology comparisons and reviews. We help consumers make informed decisions about their tech purchases with detailed, unbiased information.</p>
+                <p>Our mission is to simplify technology choices by providing clear, accessible comparisons that save you time and money.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Disclaimer</li>
+                    <li>Affiliate Disclosure</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Streaming Devices</li>
+                    <li>Smart TVs</li>
+                    <li>Audio Equipment</li>
+                    <li>Gaming Consoles</li>
+                    <li>Mobile Phones</li>
+                    <li>Laptops</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p><strong>Prismava Technologies Pvt. Ltd.</strong></p>
+                <p>123 Tech Park, Sector 18<br>
+                Gurugram, Haryana 122015<br>
+                India</p>
+                <p>Email: info@prismava.com</p>
+                <p>Phone: +91-124-4567890</p>
+                <p>Customer Support: support@prismava.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Prismava Technologies Pvt. Ltd. All rights reserved. | GST: 06AABCP1234Q1ZV</p>
+            <p>This website is compliant with Google AdSense policies and follows ethical advertising practices.</p>
+        </div>
+    </footer>
+</body>
+</html>
